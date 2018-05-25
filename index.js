@@ -77,25 +77,16 @@ function openNav() {
 
 
         [].forEach.call(document.querySelectorAll('.imagesledger'), function (el,i) {
-            console.log(i);
-            var slider = tns({
-                container:el,
-                items: 3,
-                loop:true,
-                gutter:20,
-                nav:false,
-                mouseDrag: true,
-                slideBy: 'page',
-                swipeAngle: 10,
-                controlsContainer:".ctrlcontainer"+i,
-                responsive: {
-                    "900": {
-                      "items": 3
-                    },
-                    "1200": {
-                      "items": 6
-                    }
-                  },
+          
+            var slider = new Siema({
+                selector: el,
+                duration:200,
+                perPage: {
+                    500:2,
+                    800: 3, // 2 items for viewport wider than 800px
+                    1240: 5, // 3 items for viewport wider than 1240px
+                  }
+              
               });
           });
 
