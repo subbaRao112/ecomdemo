@@ -82,7 +82,7 @@ function openNav() {
                 selector: el,
                 duration:200,
                 perPage: {
-                    400:2,
+                    350:2,
                     800: 3, // 2 items for viewport wider than 800px
                     1240: 5, // 3 items for viewport wider than 1240px
                   }
