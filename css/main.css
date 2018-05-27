@@ -9,6 +9,7 @@
 }
 
 body{
+    width:100%;
     position: relative;
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
@@ -166,6 +167,8 @@ background-color: white;
     }
 
 .maincontent{
+    width: 95vw;
+    margin:0 auto;
     display: flex;
     flex-direction: column;
 }
@@ -273,6 +276,8 @@ margin-top: 2px;
 @media only screen and (max-width: 600px){
     .descriptleft{
      width: 100%;
+     padding:5px;
+     box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, .2);
      text-align: center;
      }
      .prodcontentslide{
