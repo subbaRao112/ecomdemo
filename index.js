@@ -13,6 +13,7 @@ bread.addEventListener("click",openNav,false);
 
 
 function openNav() {
+     event.preventDefault();
     if(!visible){
         visible = true;
        
