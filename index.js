@@ -7,7 +7,7 @@ let visible = false;
 /* nav menu */
 
 var bread = document.getElementById("leftmenu");
-//bread.addEventListener("touchstart",openNav,false);
+bread.addEventListener("touchstart",openNav,false);
 bread.addEventListener("click",openNav,false);
 
 
