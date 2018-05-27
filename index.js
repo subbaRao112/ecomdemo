@@ -6,7 +6,7 @@ let visible = false;
 
 /* nav menu */
 
-var bread = document.getElementById("breadcrumb");
+var bread = document.getElementById("leftmenu");
 bread.addEventListener("touchstart",openNav,false);
 bread.addEventListener("click",openNav,false);
 
@@ -15,14 +15,14 @@ bread.addEventListener("click",openNav,false);
 function openNav() {
     if(!visible){
         visible = true;
-        bread.style.transform = "translatex(250px)";
+       
         document.getElementById("accordian").style.WebkitTransition = 'all 0.5s';
         document.getElementById("accordian").style.transform = "translatex(250px)";
         document.getElementById("main").style.WebkitTransition = 'all 0.5s';
         document.getElementById("main").style.transform  = "translatex(250px)";
     }else{
         visible = false;
-        bread.style.transform = "translatex(0)";
+      
         document.getElementById("accordian").style.WebkitTransition = 'all 0.5s';
         document.getElementById("accordian").style.transform ="translatex(0)";
         document.getElementById("main").style.WebkitTransition = 'all 0.5s';
