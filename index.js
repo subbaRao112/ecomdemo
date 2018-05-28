@@ -82,6 +82,7 @@ function openNav() {
             var slider = new Siema({
                 selector: el,
                 duration:200,
+                 perPage:2,
                 perPage: {
                     350:2,
                     800: 3, // 2 items for viewport wider than 800px
