@@ -74,7 +74,7 @@ function openNav() {
         prev.addEventListener('click', () => mySiema.prev());
         next.addEventListener('click', () => mySiema.next());
 
-        //setInterval(() => mySiema.next(), 2000);
+        setInterval(() => mySiema.next(), 2000);
 
 
         [].forEach.call(document.querySelectorAll('.imagesledger'), function (el,i) {
